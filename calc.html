@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Calculator </title>
+    </head>
+    <body>
+        <h1> Simple Calculator </h1>
+        <div style="border:2px solid black; width: 200px; height:300px; padding:20px">
+            <form name="form1">
+                <input type="text" id="calc" name="calc"><br><br>
+                <input type="button" value="1" onclick="form1.calc.value +='1'">
+                <input type="button" value="2" onclick="form1.calc.value +='2'">
+                <input type="button" value="3" onclick="form1.calc.value +='3'">
+                <input type="button" value="+" onclick="form1.calc.value += '+'">
+                <br><br>
+                <input type="button" value="4" onclick="form1.calc.value +='4'">
+                <input type="button" value="5" onclick="form1.calc.value +='5'">
+                <input type="button" value="6" onclick="form1.calc.value +='6'">
+                <input type="button" value="-" onclick="form1.calc.value +='-'">
+                <br><br>
+                <input type="button" value="7" onclick="form1.calc.value +='7'">
+                <input type="button" value="8" onclick="form1.calc.value +='8'">
+                <input type="button" value="9" onclick="form1.calc.value +='9'">
+                <input type="button" value="*" onclick="form1.calc.value +='*'">
+                <br><br>
+                <input type="button" value="/" onclick="form1.calc.value +='/'">
+                <input type="button" value="0" onclick="form1.calc.value +='0'">
+                <input type="button" value="." onclick="form1.calc.value +='.'">
+                <input type="button" value="=" onclick="form1.calc.value = eval(form1.calc.value)">
+                <input type="button" value="Clear All" onclick="form1.calc.value = ''" id = "clear">
+                <br>
+            </form>
+        </div>
+    </body>
+</html>
